@@ -9,7 +9,7 @@ Some basic Git commands are:
 ```
 git status
 git add .
-git commit am'commit message'
+git commit -am'commit message'
 ```
 
 dev environment notes

@@ -1,18 +1,25 @@
-let xLoc = 50;
-let xSpeed = 1;
+let values = [];
 
 function setup() {
   createCanvas(400, 400);
+  for (let index = 0; index < 100; index++) {
+    values[index] = random(100);
+    
+  }
 }
 
 function draw() {
-  xLoc = xLoc + xSpeed;
-  if(xLoc > width - 50|| xLoc < 50){
-    xSpeed = xSpeed * -1;
+  background(255);
+  fill(0);
+  for (let i = 0; i < values.length; i++) {
+    beginShape();
+      vertex(80, i*10);
+      quadraticVertex(0, values[i], 20, 140);
+    endShape(CLOSE)
+    
   }
-  background(0, 0, 255);
-  fill(255,0, 255);
-  rect(xLoc, height/2, 100, 100);
-  ellipse(width/2, xLoc, 50, 50);
-  //print(xLoc);
+// array.forEach(element => {
+  
+// });
+
 }
