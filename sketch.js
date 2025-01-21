@@ -13,6 +13,6 @@ function draw() {
   background(0, 0, 255);
   fill(255,0, 255);
   rect(xLoc, height/2, 100, 100);
-  rect(width/2, xLoc, 50, 50);
+  ellipse(width/2, xLoc, 50, 50);
   //print(xLoc);
 }
